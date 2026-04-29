@@ -1,3 +1,6 @@
+
+
+
 const PI = 3.14;
 let radius = 3;
 
@@ -21,7 +24,7 @@ let result = one * two;
 console.log(result); // 2, the string '2' is coerced into a number
 
 result = one + two;
-console.log(result); 
+console.log(result);
 
 //scope
 
@@ -34,6 +37,6 @@ if (true) {
 }
 console.log(course); //works fine, course is global
 console.log(student); //does not work, can't access a block variable outside the block
-                    
+
 
 
