@@ -3,6 +3,10 @@ console.log(title);
 
 title.textContent = 'Web Page Components';
 
+title.addEventListener('click', function () {
+    title.classList.toggle('highlight');
+})
+
 
 document.querySelector("#topics").style.color = 'blue';
 
