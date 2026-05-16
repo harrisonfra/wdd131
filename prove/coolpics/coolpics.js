@@ -10,14 +10,16 @@ gallery.addEventListener('click', openModal);
 //changed this function to show the modal
 function openModal(e) {
 
-    const img = e.target;
+    if (e.target.tagName !== 'IMG') return;
 
-    if (img.tagName !== 'IMG') return;
+    const img = e.target;
 
     const src = img.getAttribute('src');
     const alt = img.getAttribute('alt');
 
-    modalImage.src = src;
+    const full = src.replace('-sm', '-full');
+
+    modalImage.src = full;
     modalImage.alt = alt;
 
     modal.showModal();
