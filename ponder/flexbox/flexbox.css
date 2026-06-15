@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    max-width: 1280px;
+    margin: auto;
+    padding: 1em;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    /* background-color: bisque;
+height: 100px; */
+    /* justify-content: end; */
+    align-items: center;
+
+}
+
+.media-card {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.media-card-content p {
+    display: none;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery section {
+    flex: 1 1 460px;
+    /* flex-grow: 1; flex-shrink: 1; flex-basis: 460px; this does the same thing */
+    padding: 1em;
+}
+
+hr {
+    margin-top: 50px;
+}
+
+@media (min-width: 550px) {
+    .main-nav {
+        flex-direction: row;
+        justify-content: end;
+        gap: 2em;
+    }
+
+    .media-card {
+        flex-direction: row;
+    }
+
+    .media-card-content p {
+        display: unset;
+        /* or display: block; */
+    }
+}
