@@ -57,10 +57,9 @@ h2 {
     outline: none;
 }
 
-.search-icon {
+#searchButton img {
     width: 40px;
     padding: 0.4em;
-    border-left: 2px solid black;
 }
 
 .recipe {

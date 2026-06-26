@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Recipe Book</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 
     <!-- Open Graph (Facebook, LinkedIn, etc.) -->
     <meta property="og:type" content="website">
@@ -32,14 +33,16 @@
         <img src="recipe-book.png" alt="recipe book icon" class="icon">
         <h1>RecipeBook</h1>
     </header>
-    <div class="searchbar">
-        <input type="text" placeholder="Search recipes...">
-        <img src="search.svg" alt="search icon" class="search-icon">
+   <div class="searchbar">
+    <input id="search" type="text" placeholder="Search recipes...">
 
-    </div>
+    <button id="searchButton">
+        <img src="search.svg" alt="Search">
+    </button>
+</div>
 
-    <div class="recipe">
-        <img src="apple-crisp.jpg" alt="Apple Crisp">
+    <div id="recipe-container">
+        <!-- <img src="apple-crisp.jpg" alt="Apple Crisp">
 
         <div class="recipe-content">
             <button class="button">dessert</button>
@@ -58,7 +61,7 @@
                 Apple crisp is a classic dessert that combines tender,
                 spiced apples with a crunchy oat topping...
             </p>
-        </div>
+        </div> -->
     </div>
 
     <footer>
